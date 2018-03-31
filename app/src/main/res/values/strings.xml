@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">ChallengeApplication</string>
+
+    <!-- UserActivity -->
+    <string name="user_rating_text">Rating</string>
+    <string name="user_name">Username</string>
+    <string name="user_challenge_button_name">Challenges</string>
+    <string name="user_history_button_name">History</string>
+
+    <!-- CreateChallengeActivity -->
+    <string name="create_challenge_button_name">Create</string>
+
+    <!-- ChallengeActivity -->
+    <string name="challenge_id">ID:</string>
+    <string name="challenge_name">Name:</string>
+    <string name="title_activity_auth">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+</resources>

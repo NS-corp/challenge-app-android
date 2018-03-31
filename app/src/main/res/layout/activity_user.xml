@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:rowCount="3"
+    app:columnCount="2"
+    android:layout_margin="15dp"
+    tools:context="corp.ns.challengeapplication.corp.ns.challenge_app_android.UserActivity">
+
+
+    <android.support.v7.widget.GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:rowCount="3"
+        app:columnCount="2"
+
+        app:layout_column="0"
+        app:layout_row="0"
+        app:layout_columnSpan="2"
+        app:layout_rowWeight="1">
+
+        <ImageView
+            android:id="@+id/user_avatar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/avatar"
+            android:adjustViewBounds="true"
+            app:layout_gravity="fill"
+            app:layout_column="0"
+            app:layout_row="0"
+            app:layout_columnWeight="1"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/user_name"
+            android:text="@string/user_name"
+            app:layout_gravity="center"
+            app:layout_row="1"
+            app:layout_column="0"
+            app:layout_columnWeight="1"/>
+
+        <android.support.v7.widget.GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:rowCount="1"
+            app:columnCount="1"
+
+            app:layout_gravity="fill"
+            app:layout_row="0"
+            app:layout_column="1"
+            app:layout_rowSpan="2"
+            app:layout_columnWeight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/user_rating"
+                android:text="@string/user_rating_text"
+                app:layout_row="0"
+                app:layout_column="0"
+                app:layout_rowSpan="1"
+                app:layout_gravity="center"
+                />
+
+        </android.support.v7.widget.GridLayout>
+
+
+    </android.support.v7.widget.GridLayout>
+
+    <android.support.v7.widget.GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:rowCount="2"
+        app:columnCount="1"
+
+        app:layout_column="0"
+        app:layout_row="1"
+        app:layout_columnSpan="2"
+        app:layout_rowWeight="2"
+        >
+
+        <!--<Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/user_challenge_button"
+            android:text="@string/user_challenge_button_name"
+            android:onClick="onChallengeButtonClicked"
+            app:layout_gravity="center"
+            app:layout_row="0"
+            app:layout_column="0" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/user_history_button"
+            android:text="@string/user_history_button_name"
+            android:onClick="onHistoryButtonClicked"
+            app:layout_gravity="center"
+            app:layout_row="1"
+            app:layout_column="0" />-->
+
+
+    </android.support.v7.widget.GridLayout>
+
+    <!-- Test Grid -->
+
+    <android.support.v7.widget.GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:rowCount="2"
+        app:columnCount="2"
+
+        app:layout_column="0"
+        app:layout_row="2"
+        app:layout_columnSpan="2"
+        app:layout_rowWeight="1">
+
+        <!-- android:text="http://192.168.0.101:8080/challenge-app/" -->
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/et_test"
+            android:text="1"
+            app:layout_row="0"
+            app:layout_column="0" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/button_test"
+            android:text="TEST"
+            app:layout_row="1"
+            app:layout_column="0" />
+
+
+    </android.support.v7.widget.GridLayout>
+
+
+
+</android.support.v7.widget.GridLayout>
