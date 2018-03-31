@@ -16,6 +16,7 @@ import java.util.List;
 import java.util.Map;
 
 import corp.ns.challenge_app_android.RequestData.Data.ChallengeInfo;
+import corp.ns.challengeapplication.R;
 
 public class ChallengeListActivity extends AppCompatActivity {
 

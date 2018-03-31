@@ -39,6 +39,7 @@ import corp.ns.challenge_app_android.Consts.ExtraNames;
 import corp.ns.challenge_app_android.RequestData.AuthUserData.AuthUserResponseData;
 import corp.ns.challenge_app_android.RequestData.Data.UserInfo;
 import corp.ns.challenge_app_android.RetrofitApi.ResponseCallback;
+import corp.ns.challengeapplication.R;
 
 import static android.Manifest.permission.READ_CONTACTS;
 

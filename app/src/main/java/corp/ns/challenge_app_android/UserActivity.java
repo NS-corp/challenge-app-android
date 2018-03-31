@@ -14,6 +14,7 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 import corp.ns.challenge_app_android.Consts.ExtraNames;
 import corp.ns.challenge_app_android.RequestData.Data.UserInfo;
+import corp.ns.challengeapplication.R;
 
 public class UserActivity extends AppCompatActivity {
 

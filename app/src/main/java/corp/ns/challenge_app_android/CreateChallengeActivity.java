@@ -8,6 +8,8 @@ import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 
+import corp.ns.challengeapplication.R;
+
 public class CreateChallengeActivity extends AppCompatActivity {
 
     private DbHelper dbHelper;

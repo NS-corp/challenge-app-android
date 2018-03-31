@@ -4,6 +4,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.TextView;
 import corp.ns.challenge_app_android.RequestData.Data.ChallengeInfo;
+import corp.ns.challengeapplication.R;
 
 public class ChallengeActivity extends AppCompatActivity {
 
