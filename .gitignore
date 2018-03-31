@@ -1,0 +1,20 @@
+.class
+
+# Package Files #
+*.jar
+*.war
+*.ear
+.gradle
+/build
+!gradle/wrapper/gradle-wrapper.jar
+/local.properties
+.DS_Store
+/captures
+.externalNativeBuild
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+out
