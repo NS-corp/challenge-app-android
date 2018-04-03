@@ -7,6 +7,6 @@ import retrofit2.http.Query;
 
 public interface ServerApi {
 
-    @GET("/auth_user_request/")
-    Call<AuthUserResponseData> authUserRequest(@Query("userId") int userId);
+    @GET("/challenge-app/auth_user_request/")
+    Call<AuthUserResponseData> authUserRequest(@Query("uid") int userId);
 }
