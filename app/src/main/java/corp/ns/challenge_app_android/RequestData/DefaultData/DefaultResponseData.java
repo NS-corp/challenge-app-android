@@ -3,27 +3,26 @@ package corp.ns.challenge_app_android.RequestData.DefaultData;
 import android.os.Parcel;
 
 import corp.ns.challenge_app_android.RequestData.ResponseData;
+import lombok.Getter;
+import lombok.Setter;
 
 public class DefaultResponseData implements ResponseData {
 
     /* Request fields */
 
-    private boolean requestStatus;
+    @Setter
+    private boolean res;
 
     /* Getters and Setters */
 
-    public boolean getRequestStatus() {
-        return requestStatus;
-    }
-
-    public void setRequestStatus(boolean requestStatus) {
-        this.requestStatus = requestStatus;
+    public boolean getRes() {
+        return res;
     }
 
     /* Constructors */
 
     public DefaultResponseData(boolean requestStatus) {
-        this.requestStatus = requestStatus;
+        this.res = requestStatus;
     }
 
     /* Parcelable */
@@ -35,11 +34,11 @@ public class DefaultResponseData implements ResponseData {
 
     @Override
     public void writeToParcel(Parcel dest, int flags) {
-        dest.writeByte(this.requestStatus ? (byte) 1 : (byte) 0);
+        dest.writeByte(this.res ? (byte) 1 : (byte) 0);
     }
 
     protected DefaultResponseData(Parcel in) {
-        this.requestStatus = in.readByte() != 0;
+        this.res = in.readByte() != 0;
     }
 
     public static final Creator<DefaultResponseData> CREATOR = new Creator<DefaultResponseData>() {
