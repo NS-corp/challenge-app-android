@@ -35,6 +35,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import butterknife.BindView;
+import butterknife.ButterKnife;
 import corp.ns.challenge_app_android.Consts.ExtraNames;
 import corp.ns.challenge_app_android.RequestData.AuthUserData.AuthUserResponseData;
 import corp.ns.challenge_app_android.RequestData.Data.UserInfo;
@@ -79,6 +80,8 @@ public class AuthActivity extends AppCompatActivity implements LoaderCallbacks<C
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_auth);
+        ButterKnife.bind(this);
+
         populateAutoComplete();
 
         mPasswordView.setOnEditorActionListener(new TextView.OnEditorActionListener() {
@@ -171,7 +174,7 @@ public class AuthActivity extends AppCompatActivity implements LoaderCallbacks<C
      */
     private void attemptLogin() {
 
-
+        authUserTask(12);
 
         if (mAuthTask != null) {
             return;
