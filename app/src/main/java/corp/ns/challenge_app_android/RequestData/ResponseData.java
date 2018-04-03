@@ -4,5 +4,5 @@ import android.os.Parcelable;
 
 public interface ResponseData extends Parcelable {
     // Default request
-    boolean getRequestStatus();
+    boolean getRes();
 }
