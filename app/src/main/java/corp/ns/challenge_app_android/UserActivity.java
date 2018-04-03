@@ -18,11 +18,6 @@ import corp.ns.challengeapplication.R;
 
 public class UserActivity extends AppCompatActivity {
 
-    @BindView(R.id.et_test)
-    EditText editTextTest;
-    @BindView(R.id.button_test)
-    Button buttonTest;
-
     @BindView(R.id.user_name)
     TextView mUserNameTextView;
 

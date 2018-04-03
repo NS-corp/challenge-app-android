@@ -7,12 +7,12 @@
     app:rowCount="3"
     app:columnCount="2"
     android:layout_margin="15dp"
-    tools:context="corp.ns.challengeapplication.corp.ns.challenge_app_android.UserActivity">
+    tools:context="corp.ns.challenge_app_android.UserActivity">
 
 
     <android.support.v7.widget.GridLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         app:rowCount="3"
         app:columnCount="2"
 
@@ -82,7 +82,7 @@
         app:layout_rowWeight="2"
         >
 
-        <!--<Button
+        <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/user_challenge_button"
@@ -100,44 +100,9 @@
             android:onClick="onHistoryButtonClicked"
             app:layout_gravity="center"
             app:layout_row="1"
-            app:layout_column="0" />-->
-
-
-    </android.support.v7.widget.GridLayout>
-
-    <!-- Test Grid -->
-
-    <android.support.v7.widget.GridLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:rowCount="2"
-        app:columnCount="2"
-
-        app:layout_column="0"
-        app:layout_row="2"
-        app:layout_columnSpan="2"
-        app:layout_rowWeight="1">
-
-        <!-- android:text="http://192.168.0.101:8080/challenge-app/" -->
-        <EditText
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/et_test"
-            android:text="1"
-            app:layout_row="0"
-            app:layout_column="0" />
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/button_test"
-            android:text="TEST"
-            app:layout_row="1"
             app:layout_column="0" />
 
 
     </android.support.v7.widget.GridLayout>
-
-
 
 </android.support.v7.widget.GridLayout>
