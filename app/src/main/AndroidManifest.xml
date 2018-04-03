@@ -19,11 +19,6 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name="corp.ns.challenge_app_android.UserActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity android:name="corp.ns.challenge_app_android.HistoryActivity" />
         <activity android:name="corp.ns.challenge_app_android.ChallengeListActivity" />
@@ -33,7 +28,14 @@
         <activity android:name="corp.ns.challenge_app_android.CreateTaskActivity" />
         <activity
             android:name="corp.ns.challenge_app_android.AuthActivity"
-            android:label="@string/title_activity_auth"></activity>
+            android:label="@string/title_activity_auth">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>
