@@ -82,6 +82,8 @@ public class AuthActivity extends AppCompatActivity implements LoaderCallbacks<C
         setContentView(R.layout.activity_auth);
         ButterKnife.bind(this);
 
+        testAuthUserTask(3);
+
         populateAutoComplete();
 
         mPasswordView.setOnEditorActionListener(new TextView.OnEditorActionListener() {
@@ -165,6 +167,14 @@ public class AuthActivity extends AppCompatActivity implements LoaderCallbacks<C
             }
         });
 
+    }
+
+    private void testAuthUserTask(int userId){
+        UserInfo userInfo = new UserInfo(userId, "Surok");
+
+        Intent intent = new Intent(AuthActivity.this, UserActivity.class)
+                .putExtra(ExtraNames.USER_INFO_EXTRA, userInfo);
+        startActivity(intent);
     }
 
     /**
