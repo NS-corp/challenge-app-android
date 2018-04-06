@@ -20,6 +20,13 @@ public class AuthUserResponseData extends DefaultResponseData {
     }
 
     @Override
+    public String toString() {
+        return "AuthUserResponseData{" +
+                "uinf=" + uinf +
+                '}';
+    }
+
+    @Override
     public int describeContents() {
         return 0;
     }
@@ -28,11 +35,6 @@ public class AuthUserResponseData extends DefaultResponseData {
     public void writeToParcel(Parcel dest, int flags) {
         super.writeToParcel(dest, flags);
         dest.writeParcelable(this.uinf, flags);
-    }
-
-    public AuthUserResponseData(boolean requestStatus, UserInfo userInfo) {
-        super(requestStatus);
-        this.uinf = userInfo;
     }
 
     protected AuthUserResponseData(Parcel in) {
