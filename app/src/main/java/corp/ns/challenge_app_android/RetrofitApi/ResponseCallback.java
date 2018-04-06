@@ -24,7 +24,7 @@ public abstract class ResponseCallback<T extends ResponseData> implements Callba
             return;
         }
 
-        Log.i("retrofit", response.toString());
+        Log.i("retrofit", responseData.toString());
         // Check Request Status
         if(responseData.getRes()){
             onRequestSuccess(responseData);
