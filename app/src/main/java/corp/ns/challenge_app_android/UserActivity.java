@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -13,6 +14,7 @@ import android.widget.TextView;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import corp.ns.challenge_app_android.Consts.ExtraNames;
+import corp.ns.challenge_app_android.Handlers.ToastHandler;
 import corp.ns.challenge_app_android.RequestData.Data.UserInfo;
 import corp.ns.challengeapplication.R;
 
@@ -24,7 +26,7 @@ public class UserActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_user);
+        setContentView(R.layout.activity_user_new);
         ButterKnife.bind(this);
 
         // Take UserInfo from intent
