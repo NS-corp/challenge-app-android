@@ -26,6 +26,14 @@ public class UserInfo implements Parcelable {
     }
 
     @Override
+    public String toString() {
+        return "UserInfo{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                '}';
+    }
+
+    @Override
     public int describeContents() {
         return 0;
     }
